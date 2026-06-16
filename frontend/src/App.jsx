@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import Email from "./components/Email";
 import AI from "./components/Ai";
+import GroqAI from "./directmethod/Groq";
+import Resend from "./directmethod/Resend";
+import ResendEmail from "./directmethod/Resend";
 
 export default function App() {
   const [people, setPeople] = useState([]);
@@ -60,9 +63,9 @@ export default function App() {
 
 
       <hr />
-      <Email/>
+      <ResendEmail/>
       <hr />
-      <AI/>
+      <GroqAI/>
     </div>
   );
 }
